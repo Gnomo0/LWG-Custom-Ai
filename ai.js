@@ -39,3 +39,5 @@ function run() {
             console.error(e)
       }
 }
+
+run();
