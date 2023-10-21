@@ -1,7 +1,5 @@
 const myPlayerNumber = scope.getMyPlayerNumber();
 
-function getOwnedUnits() { }
-
 function isProducing(unit) {
       if (unit.getUnitTypeNameInProductionQueAt(1)) {
             return true;
@@ -25,6 +23,7 @@ function getGold() {
 
 function manageCastles() {
       let castles = scope.getBuildings({ type: "Castle", player: myPlayerNumber });
+      console.log(castles)
 
       if (!castles[0]) return;
 
